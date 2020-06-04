@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+}
+
+body,
+input,
+button {
+    font: 14px 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(-45deg, #aaa 25%, #eee 100%);
+    background-attachment: fixed;
+}
+
+/**
+* YOUR CODE HERE
+*/
+
+.logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avatar { 
+  transition: transform .3s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.avatar:hover{
+    transform: scale(1.5);
+    filter: grayscale(0);
+}
+
+.contributor {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5em;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    flex: auto;
+}
+
+.contributor p {
+    padding: 10px;
+    color: #888;
+    font-weight: 900;
+    
+}
+
+.contributor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;    
+    transition: transform .2s;
+    filter: grayscale(1.0);
+}
+
+.contributor img :hover{
+    transform: scale(1.5);
+}
+
+.login-page {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form {
+    position: relative;
+    width: 440px;
+    z-index: 1;
+    background: #FFFFFF;
+    height: 210px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(0, 132, 41);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #43A047;
+}
+
+.form button:disabled {
+    background: rgb(155, 155, 155);
+}
